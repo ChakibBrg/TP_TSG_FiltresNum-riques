@@ -6,17 +6,10 @@ Ce TP vise à concevoir un filtre numérique pour filtrer un signal bruité dont
 C'est un filtre RII de type passe-bande entre les deux fréquences: 1 kHz et 3 kHz.
 
 ## 2. Calcul des fréquences normalisées de ce filtre
-Les fréquences de coupure normalisées sont calculées en divisant les fréquences de coupure par la fréquence d'échantillonnage.
+Les fréquences de coupure normalisées sont calculées en divisant les fréquences de coupure par la fréquence d'échantillonnage (fréquence maximale).
 
-\[
-\text{Fréquence de coupure normalisée} = \frac{\text{Fréquence de coupure}}{\text{Fréquence d'échantillonnage}}
-\]
 
-Pour calculer la fréquence maximale, on utilise le théorème de Shannon :
-
-\[
-f_{max} = \frac{f_s}{2}
-\]
+Pour calculer la fréquence maximale, on utilise le théorème de Shannon :  **fréquence_maximale = fréquence_d'échantillonage / 2**
 
 ## 3. Trouver les coefficients \( a_i \) et \( b_i \) du filtre RII
 Les coefficients du filtre sont calculés à l'aide de la fonction `signal.butter`.
