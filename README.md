@@ -6,7 +6,7 @@ Ce TP vise à concevoir un filtre numérique pour filtrer un signal bruité dont
 C'est un filtre RII de type passe-bande entre les deux fréquences: 1 kHz et 3 kHz.
 
 ## 2. Calcul des fréquences normalisées de ce filtre
-Les fréquences de coupure normalisées sont calculées en divisant les fréquences de coupure par la fréquence d'échantillonnage (fréquence maximale).
+Les fréquences de coupure normalisées sont calculées en divisant les fréquences de coupure par la fréquence maximale.
 
 
 Pour calculer la fréquence maximale, on utilise le théorème de Shannon :  **fréquence_maximale = fréquence_d'échantillonage / 2**
